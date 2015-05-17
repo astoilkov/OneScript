@@ -118,11 +118,60 @@ The result of the OneScript above will be:
 }
 ```
 
+Result:
+
+```html
+<html>
+    <head>
+        <script>
+            // the SignIn form will inherit VirtualElement
+            function SignIn() {
+                this.username = '';
+                this.password = '';
+                
+                // use Object.observe to observe the object
+                this.observe();
+                
+                this.find('#inp1').val(this.username);
+                this.find('#inp2').val(this.password);
+                this.find('#btn1').click(this.signIn);
+            }
+            
+            SignIn.prototype.signIn = function () {
+                if (this.username == 'admin' && this.password == 'admin') {
+                    alert('login successful');
+                } else {
+                    alert('username or password was incorrect try with admin admin');
+                }
+            };
+        </script>
+    </head>
+    <body>
+        <h1>Hello Componenets</h1>
+        <form>
+            <h1>Sign In</h1>
+            <input id="inp1" placeholder="Enter your username">
+            <input id="inp2" placeholder="Enter your password">
+            <button id="btn1">Sign in</button>
+        </form>
+    </body>
+</html>
+```
+
 ## Why OneScript?
+
+* Learn once build using whathever - OneScript would be designed in a way that every framework could addopt it.
+Angular, React, jsblocks, Ember or any other framework will be able to implement the syntax and add additional
+methods to adopt it to their thinking. This way we could use one base implementation and framework will compete
+for performance, debugging experience, extension, community and so on.
 
 * [Rise of the Transpilers by Jeremy Ashkenas creator of CoffeeScript](https://youtu.be/DspYurD75Ns?t=38m44s) - this is a great talk where Jeremy talks about CoffeeScript. I want to point out a specific part in the end where he talks in what he believes the next,
 future language should look like. It is exactly what OneScript is trying to achieve one unified experience with already established technologies.
 No need to select elements by id from your JavaScript and CSS...the code should be where the markup is defined.
+
+* No more code and DSL in attributes. Attributes should be used for what they were created for.
+
+* TypeScript/Flow, SASS built-in. Use proven techniques out of the box.
 
 # Coming soon...
 
@@ -138,6 +187,7 @@ No need to select elements by id from your JavaScript and CSS...the code should 
     * Components
     * Contexts
     * TypeScript/Flow support
+    * Prototyping
 * Styling
     * Introduction
     * Per element CSS
