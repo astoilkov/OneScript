@@ -84,6 +84,9 @@ The result of the OneScript above will be:
 
 ## Components
 
+Custom componenets allow you to extract logic and reuse it multipe items.
+They are powerful tool that could help your application architecture.
+
 ```html
 <SignIn> : <form> {
     username = ''
@@ -135,6 +138,8 @@ Result:
                 this.find('#inp1').val(this.username);
                 this.find('#inp2').val(this.password);
                 this.find('#btn1').click(this.signIn);
+                
+                super('SignIn');
             }
             
             SignIn.prototype.signIn = function () {
@@ -158,6 +163,45 @@ Result:
 </html>
 ```
 
+## Prototyping
+
+Prototyping is overlooked by everyone. Probably now you even can't image what exactly what I am talking about.
+A language/platform should allow quick creation of prototypes for testing, showcase and brainstorming scenarios.
+This is what OneScript is aiming for - complete platform for developing applications.
+
+```html
+<!doctype html>
+<html prototyping="true"> {
+    <body> {
+        <ul> {
+            this.each(DUMMY);
+            
+            <li>My name is ${firstName} ${lastName} and I am ${age} years old.</li>
+        }
+    }    
+}
+```
+
+```html
+<!doctype html>
+<html>
+    <body>
+        <ul>
+            <li>My name is Antonio Stoilkov and I am 23 years old.</li>
+            <li>My name is John Doe and I am 41 years old.</li>
+            <li>My name is Maria Johnes and I am 27 years old.</li>
+            <li>My name is Andrew Fuller and I am 18 years old.</li>
+            <li>My name is Robert King and I am 62 yers old.</li>
+            <li>My name is Laura White and I am 33 years old.</li>
+            <li>My name is Anne Peacock and I am 55 years old.</li>
+            <li>My name is Michael Leverling and I am 24 yers old.</li>
+            <li>My name is Nancy Callahan and I am 16 years old.</li>
+            <li>My name is Janet Dodsworth and I am 49 years old.</li>
+        </ul>
+    </body>
+</html>
+```
+
 ## Why OneScript?
 
 * Learn once build using whathever - OneScript would be designed in a way that every framework could addopt it.
@@ -173,6 +217,9 @@ No need to select elements by id from your JavaScript and CSS...the code should 
 
 * TypeScript/Flow, SASS built-in. Use proven techniques out of the box.
 
+* Prototyping - prototyping is something no one is thinking about.
+Prototyping should be built-in the languages we love so it is possible to showcase and brainstorm ideas.
+
 # Coming soon...
 
 ## Documentation
@@ -181,6 +228,7 @@ No need to select elements by id from your JavaScript and CSS...the code should 
     * Single line elements
     * Multiline elements
     * Expressions
+    * Comments
 * Coding
     * Introduction
     * VirtualElement methods
@@ -188,6 +236,8 @@ No need to select elements by id from your JavaScript and CSS...the code should 
     * Contexts
     * TypeScript/Flow support
     * Prototyping
+* Advanced code principles
+    * Dependency managment
 * Styling
     * Introduction
     * Per element CSS
