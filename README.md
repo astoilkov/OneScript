@@ -21,19 +21,19 @@ Let's get the discussion going. Open an issue if you have an idea or improvement
       <h3>Let's count some numbers<h3>
       <ul> {
           defaultColor = 'blue'
-          
+
           this.each([1, 2, 3, 5]);
-          
+
           <css> {
-              font-weight: ${defaultColor};
-              color: blue;
-              
+              font-weight: bold;
+              color: ${defaultColor};
+
               li:nth-child(even) {
                   color: yellow;
               }
           }
-          
-          <li>${this}</li>    
+
+          <li>${this}</li>
       }
     }
 }
@@ -48,7 +48,7 @@ You could read more about it [here]().
 > ***What is that CSS in the `<ul>`?***
 
 > That's how OneScript handles CSS. This way the CSS is exactly where it should be.
-Read more about the power of OneScript CSS functionality [here](https://github.com/astoilkov/MarkupScript/wiki/Handling-CSS).
+Read more about the power of OneScript CSS functionality [here]().
 
 The result of the OneScript above will be:
 
@@ -62,7 +62,7 @@ The result of the OneScript above will be:
             ul {
                 font-weight: bold;
                 color: blue;
-                
+
                 li:nth-child(even) {
                     color: yellow;
                 }
@@ -91,7 +91,7 @@ They are powerful tool that could help your application architecture.
 <SignIn> : <form> {
     username = ''
     password = ''
-    
+
     signIn() {
         if (this.username == 'admin' && this.password == 'admin') {
             alert('login successful');
@@ -99,7 +99,7 @@ They are powerful tool that could help your application architecture.
             alert('username or password was incorrect try with admin admin');
         }
     }
-    
+
     <h1>Sign In</h1>
     <input placeholder="Enter your username"> {
         this.val(username);
@@ -131,17 +131,18 @@ Result:
             function SignIn() {
                 this.username = '';
                 this.password = '';
-                
+
                 // use Object.observe to observe the object
                 this.observe();
-                
+
                 this.find('#inp1').val(this.username);
                 this.find('#inp2').val(this.password);
                 this.find('#btn1').click(this.signIn);
-                
+
+                // set the name of the custom element
                 super('SignIn');
             }
-            
+
             SignIn.prototype.signIn = function () {
                 if (this.username == 'admin' && this.password == 'admin') {
                     alert('login successful');
@@ -165,20 +166,20 @@ Result:
 
 ## Prototyping
 
-Prototyping is overlooked by everyone. Probably now you even can't image what exactly what I am talking about.
+Prototyping is overlooked by everyone.
 A language/platform should allow quick creation of prototypes for testing, showcase and brainstorming scenarios.
-This is what OneScript is aiming for - complete platform for developing applications.
 
 ```html
 <!doctype html>
-<html prototyping="true"> {
+<html> {
     <body> {
         <ul> {
+            <!-- DUMMY is a reserved word which could be used to generate random data for prototyping purposes -->
             this.each(DUMMY);
-            
+
             <li>My name is ${firstName} ${lastName} and I am ${age} years old.</li>
         }
-    }    
+    }
 }
 ```
 
@@ -191,10 +192,10 @@ This is what OneScript is aiming for - complete platform for developing applicat
             <li>My name is John Doe and I am 41 years old.</li>
             <li>My name is Maria Johnes and I am 27 years old.</li>
             <li>My name is Andrew Fuller and I am 18 years old.</li>
-            <li>My name is Robert King and I am 62 yers old.</li>
+            <li>My name is Robert King and I am 62 years old.</li>
             <li>My name is Laura White and I am 33 years old.</li>
             <li>My name is Anne Peacock and I am 55 years old.</li>
-            <li>My name is Michael Leverling and I am 24 yers old.</li>
+            <li>My name is Michael Leverling and I am 24 years old.</li>
             <li>My name is Nancy Callahan and I am 16 years old.</li>
             <li>My name is Janet Dodsworth and I am 49 years old.</li>
         </ul>
@@ -209,7 +210,8 @@ Angular, React, jsblocks, Ember or any other framework will be able to implement
 methods to adopt it to their thinking. This way we could use one base implementation and framework will compete
 for performance, debugging experience, extension, community and so on.
 
-* [Rise of the Transpilers by Jeremy Ashkenas creator of CoffeeScript](https://youtu.be/DspYurD75Ns?t=38m44s) - this is a great talk where Jeremy talks about CoffeeScript. I want to point out a specific part in the end where he talks in what he believes the next,
+* [Rise of the Transpilers by Jeremy Ashkenas creator of CoffeeScript](https://youtu.be/DspYurD75Ns?t=38m44s) - this is a great talk where Jeremy talks about CoffeeScript.
+I want to point out a specific part in the end where he talks in what he believes the next,
 future language should look like. It is exactly what OneScript is trying to achieve one unified experience with already established technologies.
 No need to select elements by id from your JavaScript and CSS...the code should be where the markup is defined.
 
@@ -220,13 +222,15 @@ No need to select elements by id from your JavaScript and CSS...the code should 
 * Prototyping - prototyping is something no one is thinking about.
 Prototyping should be built-in the languages we love so it is possible to showcase and brainstorm ideas.
 
+* Separation between CSS and code through [IDE integration]().
+
 # Coming soon...
 
 ## Documentation
 
 * HTML Syntax
-    * Single line elements
     * Multiline elements
+    * Single line elements
     * Expressions
     * Comments
 * Coding
@@ -237,7 +241,7 @@ Prototyping should be built-in the languages we love so it is possible to showca
     * TypeScript/Flow support
     * Prototyping
 * Advanced code principles
-    * Dependency managment
+    * Dependency management
 * Styling
     * Introduction
     * Per element CSS
