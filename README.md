@@ -8,6 +8,8 @@ If the project gets more than 5000 stars it will get implemented.
 
 Let's get the discussion going. Open an issue if you have an idea or improvement suggestion.
 
+ * [New GitHub Issue](https://github.com/astoilkov/OneScript/issues/new)
+
 ## Hello World
 
 ```html
@@ -84,7 +86,7 @@ The result of the OneScript above will be:
 
 ## Components
 
-Custom componenets allow you to extract logic and reuse it multipe items.
+Custom components allow you to extract logic and reuse it multiple items.
 They are powerful tool that could help your application architecture.
 
 ```html
@@ -205,14 +207,14 @@ A language/platform should allow quick creation of prototypes for testing, showc
 
 ## Why OneScript?
 
-* Learn once build using whathever - OneScript would be designed in a way that every framework could addopt it.
+* Learn once build using whatever - OneScript would be designed in a way that every framework could adopt it.
 Angular, React, jsblocks, Ember or any other framework will be able to implement the syntax and add additional
 methods to adopt it to their thinking. This way we could use one base implementation and framework will compete
-for performance, debugging experience, extension, community and so on.
+for performance, debugging experience, extension, community.
 
 * [Rise of the Transpilers by Jeremy Ashkenas creator of CoffeeScript](https://youtu.be/DspYurD75Ns?t=38m44s) - this is a great talk where Jeremy talks about CoffeeScript.
 I want to point out a specific part in the end where he talks in what he believes the next,
-future language should look like. It is exactly what OneScript is trying to achieve one unified experience with already established technologies.
+future language should look like. OneScript is trying to achieve one unified experience with already established technologies.
 No need to select elements by id from your JavaScript and CSS...the code should be where the markup is defined.
 
 * No more code and DSL in attributes. Attributes should be used for what they were created for.
@@ -220,9 +222,9 @@ No need to select elements by id from your JavaScript and CSS...the code should 
 * TypeScript/Flow, SASS built-in. Use proven techniques out of the box.
 
 * Prototyping - prototyping is something no one is thinking about.
-Prototyping should be built-in the languages we love so it is possible to showcase and brainstorm ideas.
+Prototyping should be built-in the languages we love so it is possible to showcase and brainstorm ideas quickly.
 
-* Separation between CSS and code through [IDE integration]().
+* Separation between CSS and code through [IDE integration](docs/ide-integration.md).
 
 # Coming soon...
 
@@ -247,10 +249,12 @@ Prototyping should be built-in the languages we love so it is possible to showca
     * Per element CSS
     * Dynamic CSS
     * Built in SASS
-* IDE Integration
-    * Introduction
-    * Developer Mode
-    * Designer Mode
+* [IDE Integration](docs/ide-integration.md)
+    * [Introduction](docs/ide-integration.md#introduction)
+    * [File extension](docs/ide-integration.md#file-extension)
+    * [Developer Mode](docs/ide-integration.md#developer-mode)
+    * [Designer Mode](docs/ide-integration.md#designer-mode)
+    * [Conclusion](docs/ide-integration.md#conclusion)
 * Transpilation
     * Introduction
     * React
