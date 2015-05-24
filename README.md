@@ -1,5 +1,7 @@
 # ![OneScript Logo](https://dl.dropboxusercontent.com/u/4277603/OneScript/OneScript.png) OneScript
 
+[![Join the chat at https://gitter.im/astoilkov/OneScript](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/astoilkov/OneScript?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 HTML, CSS and JavaScript brought together in one complete solution
 
 This a concept project that will be centered around the community interest.
