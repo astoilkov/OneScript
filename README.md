@@ -6,9 +6,19 @@ This a concept project that will be centered around the community interest.
 If you like what you see you could star, watch and share the project.
 If the project gets more than 5000 stars it will get implemented.
 
-Let's get the discussion going. Open an issue if you have an idea or improvement suggestion.
+This is a community project so you could be part of shaping OneScript future.
+Let's get the discussion going.
 
- * [New GitHub Issue](https://github.com/astoilkov/OneScript/issues/new)
+ * [Twitter](https://twitter.com/onescriptio)
+ * [Gitter](https://gitter.im/astoilkov/OneScript)
+ * [Google Groups](https://groups.google.com/forum/#!forum/onescript/new)
+
+Help OneScript:
+ * Star the project
+ * Watch it
+ * Fork it
+ * Share your opinion on Twitter, Facebook, ...
+ * Write a blog post about it
 
 ## Hello World
 
@@ -210,21 +220,25 @@ A language/platform should allow quick creation of prototypes for testing, showc
 * Learn once build using whatever - OneScript would be designed in a way that every framework could adopt it.
 Angular, React, jsblocks, Ember or any other framework will be able to implement the syntax and add additional
 methods to adopt it to their thinking. This way we could use one base implementation and framework will compete
-for performance, debugging experience, extension, community.
+for performance, debugging experience, extension, community
 
 * [Rise of the Transpilers by Jeremy Ashkenas creator of CoffeeScript](https://youtu.be/DspYurD75Ns?t=38m44s) - this is a great talk where Jeremy talks about CoffeeScript.
 I want to point out a specific part in the end where he talks in what he believes the next,
 future language should look like. OneScript is trying to achieve one unified experience with already established technologies.
-No need to select elements by id from your JavaScript and CSS...the code should be where the markup is defined.
+No need to select elements by id from your JavaScript and CSS...the code should be where the markup is defined
 
-* No more code and DSL in attributes. Attributes should be used for what they were created for.
+* No more code and DSL in attributes. Attributes should be used for what they were created for
 
-* TypeScript/Flow, SASS built-in. Use proven techniques out of the box.
+* TypeScript/Flow, SASS built-in. Use proven techniques out of the box
 
 * Prototyping - prototyping is something no one is thinking about.
-Prototyping should be built-in the languages we love so it is possible to showcase and brainstorm ideas quickly.
+Prototyping should be built-in the languages we love so it is possible to showcase and brainstorm ideas quickly
 
-* Separation between CSS and code through [IDE integration](docs/ide-integration.md).
+* Separation between CSS and code through [IDE integration](docs/ide-integration.md)
+
+* Community driven - allowing for a concept to become reality through the community is the perfect way to shape the project.
+We rely on companies to decide the perfect way for building applications.
+There should be a solution that is for developers from the community.
 
 # Coming soon...
 
