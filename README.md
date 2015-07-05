@@ -30,7 +30,7 @@ Help OneScript:
     }
     <body> {
       <h1>Hello from OneScript</h1>
-      <h3>Let's count some numbers<h3>
+      <h3>Let's count some numbers</h3>
       <ul> {
           defaultColor = 'blue'
 
