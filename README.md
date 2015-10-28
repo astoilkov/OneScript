@@ -2,10 +2,6 @@
 
 HTML, CSS and JavaScript brought together in one complete solution
 
-This a concept project that will be centered around the community interest.
-If you like what you see you could star, watch and share the project.
-If the project gets more than 5000 stars it will get implemented.
-
 This is a community project so you could be part of shaping OneScript future.
 Let's get the discussion going.
 
