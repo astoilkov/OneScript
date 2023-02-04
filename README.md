@@ -2,20 +2,6 @@
 
 HTML, CSS and JavaScript brought together in one complete solution
 
-This is a community project so you could be part of shaping OneScript future.
-Let's get the discussion going.
-
- * [Twitter](https://twitter.com/onescriptio)
- * [Gitter](https://gitter.im/astoilkov/OneScript)
- * [Google Groups](https://groups.google.com/forum/#!forum/onescript/new)
-
-Help OneScript:
- * Star the project
- * Watch it
- * Fork it
- * Share your opinion on Twitter, Facebook, ...
- * Write a blog post about it
-
 ## Hello World
 
 ```html
