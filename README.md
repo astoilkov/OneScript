@@ -1,4 +1,4 @@
-# ![OneScript Logo](https://dl.dropboxusercontent.com/u/4277603/OneScript/OneScript.png) OneScript
+# ![OneScript Logo](./design/logo.png) OneScript
 
 HTML, CSS and JavaScript brought together in one complete solution
 
